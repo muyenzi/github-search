@@ -1,9 +1,14 @@
-<p>user-profile works!</p>
+<div class="container">
+  <ng-progress></ng-progress>
+  <h1>Github</h1>
 
   <div class="row">
     <blockquote class="blockquote text-center">
-      <p class="mb-0">{{user.username}}</p>
-      <footer class="blockquote-footer"><cite>{{user.repositories}}</cite></footer>
+      <p class="mb-0">Username:{{user.username}}</p>
+      <footer class="blockquote-footer"><cite>Repositories:{{user.repositories}}</cite></footer>
+      <p class="mb-0">Followers : {{user.followers}}</p>
+      <p class="mb-0">Following : {{user.following}}</p>
+      <p class="mb-0">Created : {{user.creation}}</p>
     </blockquote>
   </div>
 
