@@ -1,6 +1,12 @@
 # GithubSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+
+## By **Raissa Muyenzi
+
+## DESCRIPTION
+
+It's a github search pages which will facilitates people to seach by entering the github username then gets the the user information.
 
 ## Development server
 

@@ -17,6 +17,7 @@ export class UserProfileComponent implements OnInit {
 
   ngOnInit() {
     interface ApiResponse {
+      avatar_url:string;
       login:string;
       public_repos:number;
       followers:number;
@@ -25,7 +26,7 @@ export class UserProfileComponent implements OnInit {
     }
     this.http.get<ApiResponse>("https://api.github.com/users/daneden?access_token=23fc1f308fd98aa75501702a95bdd3c27d7108e5").subscribe(data=>{
       // Succesful API request
-      this.user = new Userview(data.login, data.public_repos, data.followers, data.following, data.created_at)
+      this.user = new Userview(data.avatar_url,data.login, data.public_repos, data.followers, data.following, data.created_at)
       // err=> {
       //   this.user =new Userview ("Type a valid username",45,45,45,(2008,));
       //   console.log("An error occurred")
