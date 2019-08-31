@@ -1,0 +1,13 @@
+User name : <input type="text" [(ngModel)]="userName"> 
+<button (click)="search()">Search</button>
+
+<div class="row">
+        <blockquote class="blockquote text-center">
+          <img src="{{reponse.image}}" alt="">
+          <p class="mb-0">Username:{{reponse?.username}}</p>
+          <footer class="blockquote-footer"><cite>Repositories:{{reponse?.repositories}}</cite></footer>
+          <p class="mb-0">Followers : {{reponse?.followers}}</p>
+          <p class="mb-0">Following : {{reponse?.following}}</p>
+          <p class="mb-0">Created : {{reponse?.creation}}</p>
+        </blockquote>
+        <div >

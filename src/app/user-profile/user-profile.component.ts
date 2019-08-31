@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Userview } from '../userview';
+// import { UserserviceService } from '../userservice.service'
 
 @Component({
   selector: 'app-user-profile',
@@ -14,6 +15,10 @@ export class UserProfileComponent implements OnInit {
   constructor(private http:HttpClient) { 
   
    }
+  // constructor(userserviceService:UserserviceService) {
+  //   this.user = UserserviceService.getUser()
+
+  // }
 
   ngOnInit() {
     interface ApiResponse {
