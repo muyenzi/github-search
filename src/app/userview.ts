@@ -1,11 +1,11 @@
 export class Userview {
-    constructor(public image:string ,
-        public username:string, 
-        public repositories:number ,
+    constructor(public avatar_url:string ,
+        public login:string, 
+        public public_repos:number ,
         public followers:number, 
         public following:number , 
-        public link:string,
-        public creation:Date){
+        public bio:string,
+        public html_url:string){
     }
 }
 

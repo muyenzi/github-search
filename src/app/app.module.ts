@@ -9,13 +9,15 @@ import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
-// import { UserserviceService } from './userservice.service';
+import { CreationPipe } from './creation.pipe';
+import { UserserviceService } from './userservice.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
-    FormComponent 
+    FormComponent,
+    CreationPipe 
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { FormsModule } from '@angular/forms';
 
   ],
   providers: [
-    // UserserviceService 
+    UserserviceService 
   ],
   bootstrap: [AppComponent]
 })
