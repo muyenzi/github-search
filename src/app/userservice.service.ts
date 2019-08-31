@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Userview } from './userview';
 import { environment } from '../environments/environment'
+import { Repolist } from './repolist';
 // import { from } from 'rxjs';
 
 @Injectable({
@@ -11,17 +12,13 @@ export class UserserviceService {
   user :Userview
   userName :string;
   reponse : any;
+  repolist:Repolist[];
 
   constructor(private http: HttpClient , ) {
- this.user =new Userview( "","",0,0,0," "," ")
+ this.user =new Userview( "","",0,0,0," "," ");
+ this.repolist =[];
    }
 
-//   public username:string;
-//   public token ="23fc1f308fd98aa75501702a95bdd3c27d7108e5"
-//   constructor() { }
-// getUserview (){
-//     return Userview;
-// }
 userService(userName){
 interface ApiResponse {
       avatar_url:string;
@@ -53,6 +50,7 @@ interface ApiResponse {
        return promise
         
     }
+   
 }
 
 

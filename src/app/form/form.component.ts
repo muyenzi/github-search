@@ -4,7 +4,8 @@ import { UserserviceService } from '../userservice.service';
 import { resolve } from 'url';
 import { reject } from 'q';
 import { Userview } from '../userview';
-
+import { Repolist } from '../repolist';
+import { from } from 'rxjs';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -15,7 +16,7 @@ export class FormComponent implements OnInit {
   report: Userview;
   userName :string;
   reponse : any;
-
+  repolist: Repolist[];
   constructor(private http: HttpClient,private raissa:UserserviceService ) {
 
    }
@@ -23,6 +24,10 @@ export class FormComponent implements OnInit {
   ngOnInit() {
   }
   search (){
+    this.raissa.userService(this.userName);
+    this.report=this.raissa.user;
+    console.log(this.report) 
+
     this.raissa.userService(this.userName);
     this.report=this.raissa.user;
     console.log(this.report) 

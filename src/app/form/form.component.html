@@ -3,9 +3,9 @@
      <h1 style="text-align: center">Github Search</h1>
      <br><br>
      <div class="search">
-     <label style="color :white;">User name : </label><input type="text" [(ngModel)]="userName"> 
-    <button (click)="search()">Search</button><br><br>
-  </div><br><br>
+     <label style="color :white;">User Name  <br></label><input type="text" [(ngModel)]="userName"> 
+    <button (click)="search()" class="btn btn-primary">Search</button><br><br>
+  </div>
     <form class="well">
        
           <img src="{{report?.avatar_url}}" alt=""> 
@@ -14,7 +14,7 @@
           <p >Followers: {{report?.followers}}</p>
           <p >Following: {{report?.following}}</p>
           <p>Bio : {{report?.bio}}</p>
-        <button class="btn btn-info"><a href="{{report?.html_url}}">Visit User</a></button>
+        <button class="btn btn-primary"><a href="{{report.html_url}}">Visit User</a></button><br><br>
        
       </form>
 
