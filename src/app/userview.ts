@@ -4,8 +4,8 @@ export class Userview {
         public repositories:number ,
         public followers:number, 
         public following:number , 
+        public link:string,
         public creation:Date){
-
     }
 }
 
