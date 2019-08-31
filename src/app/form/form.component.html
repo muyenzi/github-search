@@ -4,15 +4,15 @@
      <label style="color :white;">User name : </label><input type="text" [(ngModel)]="userName"> 
     <button (click)="search()">Search</button><br><br>
 
-    <form class="well"><br>
+    <form class="well">
         <!-- <p></p> class="blockquote text-center"> -->
-          <!-- <img src="{{user.avatar_url}}" alt=""> -->
-          <p>Username:{{user.login}}</p>
-          <p>Repositories:{{user.public_repos}}</p>
-          <p >Followers: {{user.followers}}</p>
-          <p >Following: {{user.following}}</p>
-          <p>Bio : {{user.bio}}</p>
-        <button class="btn btn-info"><a href="{{user.html_url}}">Visit User</a></button>
+          <img src="{{report.avatar_url}}" alt=""> 
+          <p>Username:{{report.login}}</p>
+          <p>Repositories:{{report.public_repos}}</p>
+          <p >Followers: {{report.followers}}</p>
+          <p >Following: {{report.following}}</p>
+          <p>Bio : {{report.bio}}</p>
+        <button class="btn btn-info"><a href="{{report.html_url}}">Visit User</a></button>
         <!-- </blockquote> -->
       </form>
 <!-- </div>  -->
