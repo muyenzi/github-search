@@ -4,11 +4,17 @@
 
 .well {
     background-color:white  ;
-    width: 40%;
-    margin-left: 10%;
+    width: 50%;
+    margin-left: 25%;
+
 }
 
-img {
+.img1 {
     width :120px;
     height: 140px;
+    margin-left: 45%;
+}
+h1{ 
+    background-color: white;
+    color: black;
 }

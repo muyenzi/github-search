@@ -1,19 +1,21 @@
-     <h1 style="color :white;text-align: center">Github Search</h1>
-     <img src="https://www.pullrequest.com/blog/github-code-review-service/images/github-logo_hub2899c31b6ca7aed8d6a218f0e752fe4_46649_1200x1200_fill_box_center_2.png">
+
+    <br> <img class="img1" src="https://www.pullrequest.com/blog/github-code-review-service/images/github-logo_hub2899c31b6ca7aed8d6a218f0e752fe4_46649_1200x1200_fill_box_center_2.png">
+     <h1 style="text-align: center">Github Search</h1>
      <br><br>
+     <div class="search">
      <label style="color :white;">User name : </label><input type="text" [(ngModel)]="userName"> 
     <button (click)="search()">Search</button><br><br>
-
+  </div><br><br>
     <form class="well">
-        <!-- <p></p> class="blockquote text-center"> -->
-          <img src="{{report.avatar_url}}" alt=""> 
-          <p>Username:{{report.login}}</p>
-          <p>Repositories:{{report.public_repos}}</p>
-          <p >Followers: {{report.followers}}</p>
-          <p >Following: {{report.following}}</p>
-          <p>Bio : {{report.bio}}</p>
-        <button class="btn btn-info"><a href="{{report.html_url}}">Visit User</a></button>
-        <!-- </blockquote> -->
+       
+          <img src="{{report?.avatar_url}}" alt=""> 
+          <p>Username:{{report?.login}}</p>
+          <p>Repositories:{{report?.public_repos}}</p>
+          <p >Followers: {{report?.followers}}</p>
+          <p >Following: {{report?.following}}</p>
+          <p>Bio : {{report?.bio}}</p>
+        <button class="btn btn-info"><a href="{{report?.html_url}}">Visit User</a></button>
+       
       </form>
-<!-- </div>  -->
+
 

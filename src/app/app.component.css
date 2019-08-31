@@ -2,6 +2,10 @@
     background-image: url("http://www.technocrazed.com/wp-content/uploads/2015/12/Paris-Wallpaper-background-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height:900px;
+    height:1000px;
 
+}
+
+footer {
+    text-align: center;
 }
