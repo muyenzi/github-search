@@ -11,6 +11,7 @@ import { Userview } from '../userview';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+    
   report: Userview;
   userName :string;
   reponse : any;

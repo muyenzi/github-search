@@ -48,8 +48,9 @@ interface ApiResponse {
             
          reject(err)
         })
+    })
        return promise
-        })
+        
     }
 }
 

@@ -1,5 +1,6 @@
 export class Userview {
-    constructor(public avatar_url:string ,
+    constructor(
+        public avatar_url:string ,
         public login:string, 
         public public_repos:number ,
         public followers:number, 
