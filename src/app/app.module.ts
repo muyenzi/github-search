@@ -7,7 +7,7 @@ import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-// import { FormComponent } from './form/form.component';
+import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 // import { UserserviceService } from './userservice.service';
 
@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     UserProfileComponent,
-    // FormComponent
+    FormComponent 
   ],
   imports: [
     BrowserModule,
