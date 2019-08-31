@@ -7,7 +7,6 @@
     <button (click)="search()" class="btn btn-primary">Search</button><br><br>
   </div>
     <form class="well">
-       
           <img src="{{report?.avatar_url}}" alt=""> 
           <p>Username:{{report?.login}}</p>
           <p>Repositories:{{report?.public_repos}}</p>
@@ -15,7 +14,6 @@
           <p >Following: {{report?.following}}</p>
           <p>Bio : {{report?.bio}}</p>
         <button class="btn btn-primary"><a href="{{report.html_url}}">Visit User</a></button><br><br>
-       
       </form>
 
 

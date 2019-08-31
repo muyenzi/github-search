@@ -8,6 +8,16 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 It's a github search pages which will facilitates people to seach by entering the github username then gets the the user information.
 
+## BBD 
+
+  ## Input
+  
+  You enter the user name of the github user then you click on search
+
+  ## Output
+
+  you see their profile and all other github information
+  
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
