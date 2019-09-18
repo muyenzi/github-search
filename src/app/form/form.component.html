@@ -7,13 +7,13 @@
     <button (click)="search()" class="btn btn-primary">Search</button><br><br>
   </div>
     <form class="well">
-          <img src="{{report?.avatar_url}}" alt=""> 
-          <p>Username:{{report?.login}}</p>
-          <p>Repositories:{{report?.public_repos}}</p>
-          <p >Followers: {{report?.followers}}</p>
-          <p >Following: {{report?.following}}</p>
-          <p>Bio : {{report?.bio}}</p>
-        <a href="{{report.html_url}}"><button class="btn btn-primary">Visit Repositories</button></a><br><br>
+          <img src="{{report.avatar_url}}" alt=""> 
+          <p>Username:{{report.login}}</p>
+          <p>Repositories:{{report.public_repos}}</p>
+          <p >Followers: {{report.followers}}</p>
+          <p >Following: {{report.following}}</p>
+          <p>Bio : {{report.bio}}</p>
+       <p><a href="{{report.html_url}}"><button class="btn btn-primary">{{report.html_url}} Visit Repositories</button></a></p><br><br>
       </form><br><br>
 
 

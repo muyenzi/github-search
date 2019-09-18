@@ -26,18 +26,20 @@ interface ApiResponse {
       public_repos:number;
       followers:number;
       following:number;
+      bio: string;
       html_url:string;
-      bio:string;
+      
     }
     let promise = new Promise ((resolve , reject) => {
-        this.http.get<ApiResponse>('https://api.github.com/users/'+userName + "?access_token="+ environment.apiUrl).toPromise().then(reponse => {
+        this.http.get<ApiResponse>('https://api.github.com/users/'+ userName + "?access_token="+ environment.API).toPromise().then(reponse => {
           this.user.avatar_url =reponse.avatar_url;
           this.user.login=reponse.login;
           this.user.public_repos=reponse.public_repos;
           this.user.followers=reponse.followers;
           this.user.following=reponse.following;
+          this.user.bio = reponse.bio;
           this.user.html_url=reponse.html_url;
-          this.user.bio=reponse.bio;
+         
           console.log(this.reponse)
           resolve () 
         },
